@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Manga  Store</title>        
+    </head>
+
+    <body>
+        <h1>Manga  Store</h1>
+
+        <form action="OrderServletM" method="post">
+            <!-- 1. Customer Name -->
+            <label for="customerName">Customer Name:</label>
+            <input type="text" id="customerName" name="customerName" required>
+            <br><br>
+
+            <!-- 2. Manga Titles (Checkboxes) -->
+            <h3>Select Manga Titles (50 Baht each):</h3>
+            <label><input type="checkbox" name="mangaTitle" value="Naruto"> Naruto</label><br>
+            <label><input type="checkbox" name="mangaTitle" value="One Piece"> One Piece</label><br>
+            <label><input type="checkbox" name="mangaTitle" value="Dragon Ball"> Dragon Ball</label><br>
+            <label><input type="checkbox" name="mangaTitle" value="Attack on Titan"> Attack on Titan</label><br>
+            <label><input type="checkbox" name="mangaTitle" value="My Hero Academia"> My Hero Academia</label><br>
+            <label><input type="checkbox" name="mangaTitle" value="Death Note"> Death Note</label><br>
+            <label><input type="checkbox" name="mangaTitle" value="Bleach"> Bleach</label><br>
+            <label><input type="checkbox" name="mangaTitle" value="Tokyo Ghoul"> Tokyo Ghoul</label><br>
+            <label><input type="checkbox" name="mangaTitle" value="Demon Slayer"> Demon Slayer</label><br>
+            <label><input type="checkbox" name="mangaTitle" value="One Punch Man"> One Punch Man</label><br>
+            <br>
+
+            <!-- 3. Membership (Radio Buttons) -->
+            <h3>Are you a member?</h3>
+            <label><input type="radio" name="membership" value="yes" required> Yes (5% discount)</label><br>
+            <label><input type="radio" name="membership" value="no" required> No</label><br>
+            <br>
+
+            <!-- 4. Employee Selection (ComboBox) -->
+            <label for="employee">Employee:</label>
+            <select id="employee" name="employee" required>
+                <option value="Zee">Zee</option>
+                <option value="Fern">Fern</option>
+                <option value="Maifa">Maifa</option>
+            </select>
+            <br><br>
+
+            <!-- Submit Button -->
+            <input type="submit" value="OK">
+        </form>
+    </body>
+</body>
+</html>
